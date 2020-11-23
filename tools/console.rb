@@ -4,19 +4,54 @@ def reload
   load 'config/environment.rb'
 end
 
-#Lyft
-p1 = Passenger.new("Joe")
-p2 = Passenger.new("Mary")
-p3 = Passenger.new("Willow")
+# IMDB
+a1 = Actor.new("Jen")
+a2 = Actor.new("Bill")
+a3 = Actor.new("Mark")
+a4 = Actor.new("Marge")
+a5 = Actor.new("Les")
 
-d1  = Driver.new("Bart")
-d2  = Driver.new("Lisa")
-d3  = Driver.new("Marge")
+c1 = Character.new("Binky", a1)
+c2 = Character.new("Mumsy", a1)
+c3 = Character.new("Pookie", a2)
+c4 = Character.new("Tummy", a4)
+c5 = Character.new("Loopy", a5)
+c6 = Character.new("Plinky", a6)
 
-r1 = Ride.new(p1, d2, 50)
-r2 = Ride.new(p2, d2, 40)
-r3 = Ride.new(p2, d3, 100)
-r4 = Ride.new(p3, d1, 125)
+m1 = Movie.new("Adventures of Binky")
+m2 = Movie.new("Love Story")
+m3 = Movie.new("Star Wars")
+
+s1 = Show.new("Star Wars")
+s2 = Show.new("Friends")
+s3 = Show.new("Plant Lady")
+
+mc1 = Moviecharacter.new(c1, m2)
+mc2 = Moviecharacter.new(c2, m3)
+mc3 = Moviecharacter.new(c3, m1)
+mc4 = Moviecharacter.new(c4, m1)
+mc5 = Moviecharacter.new(c4, m2)
+mc6 = Moviecharacter.new(c2, m3)
+mc7 = Moviecharacter.new(c5, m3)
+
+sc1 = Showcharacter.new(c4, s1)
+sc2 = Showcharacter.new(c5, s2)
+sc3 = Showcharacter.new(c6, s3)
+
+
+# #Lyft
+# p1 = Passenger.new("Joe")
+# p2 = Passenger.new("Mary")
+# p3 = Passenger.new("Willow")
+
+# d1  = Driver.new("Bart")
+# d2  = Driver.new("Lisa")
+# d3  = Driver.new("Marge")
+
+# r1 = Ride.new(p1, d2, 50)
+# r2 = Ride.new(p2, d2, 40)
+# r3 = Ride.new(p2, d3, 100)
+# r4 = Ride.new(p3, d1, 125)
 
 
 # #Bakery
