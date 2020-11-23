@@ -16,7 +16,7 @@ Create the necessary methods to connect these classes.
 
 #### Bakery
 
-- #ingredients
+<!-- - #ingredients
   - should return an array of ingredients for the bakery's desserts
 - #desserts
   - should return an array of desserts the bakery makes
@@ -25,10 +25,10 @@ Create the necessary methods to connect these classes.
 - .all
   - should return an array of all bakeries
 - #shopping_list
-  - should return a string of names for ingredients for the bakery
+  - should return a string of names for ingredients for the bakery -->
 
 #### Desserts
-
+<!-- 
 - #ingredients
   - should return an array of ingredients for the dessert
 - #bakery
@@ -36,10 +36,10 @@ Create the necessary methods to connect these classes.
 - #calories
   - should return a number totaling all the calories for all the ingredients included in that dessert
 - .all
-  - should return an array of all desserts
+  - should return an array of all desserts -->
 
 #### Ingredients
-
+<!-- 
 - #dessert
   - should return a dessert object for that ingredient
 - #bakery
@@ -52,4 +52,4 @@ Create the necessary methods to connect these classes.
     - .find_all_by_name('chocolate') might return ['chocolate sprinkles',
       'chocolate mousse', 'chocolate']
     - make sure you aren't just looking for exact matches (like 'chocolate' ==
-      'chocolate')
+      'chocolate') -->
