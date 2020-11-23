@@ -4,20 +4,35 @@ def reload
   load 'config/environment.rb'
 end
 
-#Bakery
-b1 = Bakery.new("Joe's Bakery")
-b2 = Bakery.new("Besalu")
+#Lyft
+p1 = Passenger.new("Joe")
+p2 = Passenger.new("Mary")
+p3 = Passenger.new("Willow")
 
-d1 = Dessert.new(b1, "Cookie")
-d2 = Dessert.new(b2, "Fruit Pie")
-d3 = Dessert.new(b1, "Jello")
+d1  = Driver.new("Bart")
+d2  = Driver.new("Lisa")
+d3  = Driver.new("Marge")
 
-i1 = Ingredient.new("cookie flour", 20, d1)
-i2 = Ingredient.new("butter", 100, d1)
-i3 = Ingredient.new("pie flour",25, d2)
-i4 = Ingredient.new("cherries", 30, d2)
-i5 = Ingredient.new("gelatin", 5, d3)
-i6 = Ingredient.new("red 42", 2, d3)
+r1 = Ride.new(p1, d2, 50)
+r2 = Ride.new(p2, d2, 40)
+r3 = Ride.new(p2, d3, 100)
+r4 = Ride.new(p3, d1, 125)
+
+
+# #Bakery
+# b1 = Bakery.new("Joe's Bakery")
+# b2 = Bakery.new("Besalu")
+
+# d1 = Dessert.new(b1, "Cookie")
+# d2 = Dessert.new(b2, "Fruit Pie")
+# d3 = Dessert.new(b1, "Jello")
+
+# i1 = Ingredient.new("cookie flour", 20, d1)
+# i2 = Ingredient.new("butter", 100, d1)
+# i3 = Ingredient.new("pie flour",25, d2)
+# i4 = Ingredient.new("cherries", 30, d2)
+# i5 = Ingredient.new("gelatin", 5, d3)
+# i6 = Ingredient.new("red 42", 2, d3)
 
 
 # #Airbnb
