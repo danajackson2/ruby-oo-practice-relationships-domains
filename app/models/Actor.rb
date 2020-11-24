@@ -17,6 +17,7 @@ class Actor
     end
 
     def self.most_characters
+        binding.pry
         @@all.max_by{|actor| actor.char_count}
     end
 end

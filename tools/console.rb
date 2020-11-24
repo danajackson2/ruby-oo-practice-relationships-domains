@@ -4,39 +4,58 @@ def reload
   load 'config/environment.rb'
 end
 
-# IMDB
-a1 = Actor.new("Jen")
-a2 = Actor.new("Bill")
-a3 = Actor.new("Mark")
-a4 = Actor.new("Marge")
-a5 = Actor.new("Les")
+# Crowdfunding
+u1 = User.new("Greg")
+u2 = User.new("Andy")
+u3 = User.new("Laura")
 
-c1 = Character.new("Binky", a1)
-c2 = Character.new("Mumsy", a1)
-c3 = Character.new("Pookie", a2)
-c4 = Character.new("Tummy", a4)
-c5 = Character.new("Loopy", a5)
-c6 = Character.new("Plinky", a6)
+p1 = Project.new("Park Bench", 1000)
+p2 = Project.new("Library", 2000)
+p3 = Project.new("Playground", 3000)
 
-m1 = Movie.new("Adventures of Binky")
-m2 = Movie.new("Love Story")
-m3 = Movie.new("Star Wars")
+pl1 = Pledge.new(u1, p1, "Back", 100)
+pl2 = Pledge.new(u2, p2, "Create", 1050)
+pl3 = Pledge.new(u3, p1, "Back", 400)
+pl4 = Pledge.new(u2, p1, "Create", 500)
+pl5 = Pledge.new(u3, p2, "Back", 1000)
+pl6 = Pledge.new(u3, p2, "Back", 50)
+pl7 = Pledge.new(u1, p2, "Back", 4)
 
-s1 = Show.new("Star Wars")
-s2 = Show.new("Friends")
-s3 = Show.new("Plant Lady")
 
-mc1 = Moviecharacter.new(c1, m2)
-mc2 = Moviecharacter.new(c2, m3)
-mc3 = Moviecharacter.new(c3, m1)
-mc4 = Moviecharacter.new(c4, m1)
-mc5 = Moviecharacter.new(c4, m2)
-mc6 = Moviecharacter.new(c2, m3)
-mc7 = Moviecharacter.new(c5, m3)
+# # IMDB
+# a1 = Actor.new("Jen")
+# a2 = Actor.new("Bill")
+# a3 = Actor.new("Mark")
+# a4 = Actor.new("Marge")
+# a5 = Actor.new("Les")
+# a6 = Actor.new("Paul")
 
-sc1 = Showcharacter.new(c4, s1)
-sc2 = Showcharacter.new(c5, s2)
-sc3 = Showcharacter.new(c6, s3)
+# c1 = Character.new("Binky", a1)
+# c2 = Character.new("Mumsy", a1)
+# c3 = Character.new("Pookie", a2)
+# c4 = Character.new("Tummy", a4)
+# c5 = Character.new("Loopy", a5)
+# c6 = Character.new("Plinky", a6)
+
+# m1 = Movie.new("Adventures of Binky")
+# m2 = Movie.new("Love Story")
+# m3 = Movie.new("Star Wars")
+
+# s1 = Show.new("Star Wars")
+# s2 = Show.new("Friends")
+# s3 = Show.new("Plant Lady")
+
+# mc1 = Moviecharacter.new(c1, m2)
+# mc2 = Moviecharacter.new(c2, m3)
+# mc3 = Moviecharacter.new(c3, m1)
+# mc4 = Moviecharacter.new(c4, m1)
+# mc5 = Moviecharacter.new(c4, m2)
+# mc6 = Moviecharacter.new(c2, m3)
+# mc7 = Moviecharacter.new(c5, m3)
+
+# sc1 = Showcharacter.new(c4, s1)
+# sc2 = Showcharacter.new(c5, s2)
+# sc3 = Showcharacter.new(c6, s3)
 
 
 # #Lyft
