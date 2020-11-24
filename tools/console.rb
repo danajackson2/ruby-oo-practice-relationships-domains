@@ -3,24 +3,42 @@ require_relative '../config/environment.rb'
 def reload
   load 'config/environment.rb'
 end
+# # Gym
+# l1 = Location.new("Seattle")
+# l2 = Location.new("Delhi")
+# l3 = Location.new("Berlin")
 
-# Crowdfunding
-u1 = User.new("Greg")
-u2 = User.new("Andy")
-u3 = User.new("Laura")
+# t1 = Trainer.new("Jeff")
+# t2 = Trainer.new("Stacy")
+# t3 = Trainer.new("Alex")
 
-p1 = Project.new("Park Bench", 1000)
-p2 = Project.new("Library", 2000)
-p3 = Project.new("Playground", 3000)
+# c1 = Client.new(l1, t3)
+# c2 = Client.new(l2, t3)
+# c3 = Client.new(l3, t1)
+# c4 = Client.new(l1, t2)
+# c4 = Client.new(l2, t1)
+# c5 = Client.new(l2, t3)
 
-pl1 = Pledge.new(u1, p1, "Back", 100)
-pl2 = Pledge.new(u2, p2, "Create", 1050)
-pl3 = Pledge.new(u3, p1, "Back", 400)
-pl4 = Pledge.new(u2, p1, "Create", 500)
-pl5 = Pledge.new(u3, p2, "Back", 1000)
-pl6 = Pledge.new(u3, p2, "Back", 50)
-pl7 = Pledge.new(u1, p2, "Back", 4)
+#################################################
 
+# # Crowdfunding
+# u1 = User.new("Greg")
+# u2 = User.new("Andy")
+# u3 = User.new("Laura")
+
+# p1 = Project.new("Park Bench", 1000)
+# p2 = Project.new("Library", 2000)
+# p3 = Project.new("Playground", 3000)
+
+# pl1 = Pledge.new(u1, p1, "Back", 100)
+# pl2 = Pledge.new(u2, p2, "Create", 1050)
+# pl3 = Pledge.new(u3, p1, "Back", 400)
+# pl4 = Pledge.new(u2, p1, "Create", 500)
+# pl5 = Pledge.new(u3, p2, "Back", 1000)
+# pl6 = Pledge.new(u3, p2, "Back", 50)
+# pl7 = Pledge.new(u1, p2, "Back", 4)
+
+#################################################
 
 # # IMDB
 # a1 = Actor.new("Jen")
@@ -57,6 +75,7 @@ pl7 = Pledge.new(u1, p2, "Back", 4)
 # sc2 = Showcharacter.new(c5, s2)
 # sc3 = Showcharacter.new(c6, s3)
 
+#################################################
 
 # #Lyft
 # p1 = Passenger.new("Joe")
@@ -72,6 +91,7 @@ pl7 = Pledge.new(u1, p2, "Back", 4)
 # r3 = Ride.new(p2, d3, 100)
 # r4 = Ride.new(p3, d1, 125)
 
+#################################################
 
 # #Bakery
 # b1 = Bakery.new("Joe's Bakery")
@@ -88,6 +108,7 @@ pl7 = Pledge.new(u1, p2, "Back", 4)
 # i5 = Ingredient.new("gelatin", 5, d3)
 # i6 = Ingredient.new("red 42", 2, d3)
 
+#################################################
 
 # #Airbnb
 # l1 = Listing.new("Seattle")
